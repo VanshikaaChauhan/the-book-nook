@@ -1,0 +1,530 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f7f7; 
+  }
+  
+  header {
+    background-color: #fce9e9; 
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo h1 {
+    width: 600px;
+    color: #d05e6b; 
+    font-size: 2rem;
+  }
+  
+  nav ul {
+    width: 400px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #4a4a4a; 
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #d05e6b; 
+  }
+  
+  .search-cart {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-cart input {
+    padding: 10px;
+    border: 1px solid #d05e6b; 
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  #cart-icon {
+    font-size: 1.5rem;
+    color: #d05e6b; 
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 50px;
+    border-color: #d05e6b;
+  }
+
+  
+  
+  .hero {
+    background-image: url('https://img.freepik.com/premium-photo/pastel-charm-front-view-3d-illustrated-books_954894-27615.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 60vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-content {
+    backdrop-filter: blur(5px);
+    background-color: rgba(233, 153, 193, 0.7); 
+    padding: 40px;
+    border-radius: 10px;
+  }
+
+  .hero-content:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background-color: #ff6f61; 
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #ff4c3b; 
+  }
+
+  
+  .featured-categories {
+    padding: 40px 20px;
+    background-color: #fff0f6; 
+    text-align: center;
+  }
+  
+  .featured-categories h2 {
+    color: #d05e6b; 
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .categories-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; 
+  }
+  
+  .category {
+    background-color: #ffe4e1; 
+    border-radius: 10px;
+    overflow: hidden;
+    height: 365px;
+    width: 220px; /* Fixed width for categories */
+    transition: transform 0.3s, box-shadow 0.3s;
+  } 
+  
+  .category img {
+    margin-top: 5%;
+    width: 90%;
+    height: auto;
+  }
+  
+  .category h3 {
+    padding: 15px;
+    color: #4a4a4a;
+  }
+  
+  .category:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .category a {
+    display: inline-block; 
+    background-color: #ff6f61; 
+    color: white; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px;
+    text-decoration: none; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.category a:hover {
+    background-color: #ff4c3b; 
+    transform: scale(1.05); 
+}
+
+.category img {
+    border-radius: 10px; 
+}
+
+  .best-sellers {
+    padding: 40px 20px;
+    background-color: #fff0f6; 
+    text-align: center;
+  } 
+  
+  .best-sellers h2 {
+    color: #d05e6b;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .bestseller-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between best sellers */
+  }
+  
+  .bestseller {
+    background-color: #ffe4e1; 
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px; /* Fixed width for best sellers */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+   
+  .bestseller img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+  }
+  
+  .bestseller h3 {
+    margin: 10px 0 5px;
+    color: #4a4a4a; 
+  }
+  
+  .bestseller p {
+    margin: 5px 0;
+    color: #232323; 
+  }
+  
+  .rating {
+    font-size: 1.2rem;
+  }
+  
+  .add-to-cart {
+    background-color: #ff6f61; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #ff4c3b; 
+  }
+  
+  .special-offers {
+    background-image: url('https://marketplace.canva.com/EAEthkBVLfQ/1/0/1600w/canva-blush-wave-desktop-wallpaper-drvq3zaYl2E.jpg');
+    padding: 40px 20px;
+    background-color: #fff0f6; 
+    text-align: center;
+  }
+  
+  .bestseller:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+  .special-offers h2 {
+    color: #d05e6b; 
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .offers-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between offers */
+  }
+  
+  .offer {
+    background-color: #ffe4e1; 
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px; /* Fixed width for offers */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .offer h3 {
+    margin: 10px 0;
+    color: #4a4a4a; 
+  }
+  
+  .offer p {
+    margin: 10px 0;
+    color: #7a7a7a; 
+  }
+  
+  .offer-button {
+    background-color: #ff6f61; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .offer-button:hover {
+    background-color: #ff4c3b;
+  }
+  
+  .offer:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f7f7; 
+  }
+  
+  .newsletter {
+    padding: 40px 20px;
+    background-color: #fff0f6; 
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px; /* Center the section and limit width */
+  }
+  
+  .newsletter h2 {
+    color: #d05e6b; 
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .newsletter p {
+    color: #4a4a4a; 
+    margin-bottom: 20px;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between input and button */
+  }
+  
+  .newsletter-form input {
+    padding: 10px;
+    border: 1px solid #d05e6b; 
+    border-radius: 5px;
+    flex: 1; /* Allow the input to take full width */
+  }
+  
+  .subscribe-button {
+    background-color: #d05e6b; 
+    color: #d05e6b;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .subscribe-button:hover {
+    background-color: #ff4c3b; 
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f7f7; 
+  }
+  
+  .testimonials {
+    background-image: url('https://marketplace.canva.com/EAEthkBVLfQ/1/0/1600w/canva-blush-wave-desktop-wallpaper-drvq3zaYl2E.jpg'); 
+    padding: 40px 20px;
+    background-color: #fff0f6; 
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    color: #d05e6b; 
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between testimonials */
+  }
+  
+  .testimonial {
+    background-color: #ffe4e1; 
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px; /* Fixed width for testimonials */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .testimonial p {
+    color: #4a4a4a; 
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial h3 {
+    color: #d05e6b; 
+    margin: 0;
+  }
+  
+  .testimonial:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f7f7; 
+  }
+  
+  .blog-highlights {
+    background-image: url('https://media.istockphoto.com/id/1282194538/vector/abstract-blurred-background-defocused-pink-gradient.jpg?s=612x612&w=0&k=20&c=aMFMsHxl8hmWvBAQftf8PvGIiR8smimFUGP59EszTto=');
+    padding: 40px 20px;
+    background-color: #fff0f6; 
+    text-align: center;
+  }
+  
+  .blog-highlights h2 {
+    color: #d05e6b; 
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .blog-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between blog posts */
+  }
+  
+  .blog-post {
+    background-color: #ffe4e1; 
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px; /* Fixed width for blog posts */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .blog-post img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px; /* Rounded top corners */
+  }
+  
+  .blog-post h3 {
+    color: #4a4a4a;
+    margin: 10px 0 5px;
+  }
+  
+  .blog-post p {
+    color: #7a7a7a;
+    margin-bottom: 15px;
+  }
+  
+  .read-more {
+    background-color: #ff6f61; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .read-more:hover {
+    background-color: #ff4c3b; 
+  }
+  
+  .blog-post:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f7f7; 
+  }
+  
+  .footer {
+    background-color: #ffe4e1;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between sections */
+  }
+  
+  .footer-section {
+    width: 200px; /* Fixed width for footer sections */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .footer-section h3 {
+    color: #d05e6b; 
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p, .footer-section a {
+    color: #4a4a4a; 
+    margin: 5px 0;
+    font-size: 0.9rem;
+  }
+  
+  .social-link {
+    display: block; /* Make each link a block element */
+    color: #ff6f61; 
+    text-decoration: none;
+  }
+  
+  .social-link:hover {
+    color: #ff4c3b; 
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #7a7a7a; 
+  }

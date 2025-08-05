@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Header Section-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your favorite online bookstore. Discover, read, and enjoy!">
+    <link rel="stylesheet" href="styles.css">
+    <title>The Book Nook</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>The Book Nook
+                    <br>“Your cozy corner for endless stories.”</br>
+                </h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="search-cart">
+                <input type="text" placeholder="Search Books...">
+                <button id="cart-icon">🛒</button>
+                <!--<a href="#cart" class="cart-icon">🛒</a>-->
+            </div>
+        
+        </div>       
+    </header>
+
+    <!--Hero Section-->
+    <div class="hero">
+        <div class="hero-content">
+            <h2>Dive into Your Next Adventure</h2>
+            <p>Discover a world of stories, knowledge, and inspiration.</p>
+            <a href="#collection" class="cta-button">Explore our collection</a>
+        </div>
+    </div>
+
+    <!--Featured Categories-->
+    <section class="featured-categories">
+        <h2>Featured Categories</h2>
+        <div class="categories-container">
+            <div class="category">
+                <img src="https://images.squarespace-cdn.com/content/v1/5d76a664ad6b384fec680541/1577747018154-G8YU934KZECKCGKH6P91/Screen+Shot+2019-12-30+at+3.05.35+PM.png" alt="Fiction" />
+                <a href="#Fiction" class="category-link">Fiction</a>
+
+            </div>
+            <div class="category">
+                <img src="https://m.media-amazon.com/images/I/81BE7eeKzAL._AC_UF1000,1000_QL80_.jpg" alt="Non-Fiction" />
+                <a href="#Non-Fiction" class="category-link">Non-Fiction</a>
+            </div>
+            <div class="category">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1545494980i/40916679.jpg" alt="Mystery"/>
+                <a href="#Mystery" class="category-link">Mystery</a>
+
+            </div>
+            <div class="category">
+                <img src="https://img0-placeit-net.s3-accelerate.amazonaws.com/uploads/stage/stage_image/22739/optimized_product_thumb_children-stories-book-cover-541__1_.jpg" alt="Children's Books" />
+                <a href="#Chilren's Books" class="category-link">Children's Books</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Best Seller Section-->
+    <section class="best-sellers">
+        <h2>Best Sellers</h2>
+        <div class="bestseller-container">
+            <div class="bestseller">
+                <img src="https://storage.googleapis.com/du-prd/books/images/9781501110375.jpg" alt="It Ends With Us">
+                <h3>It Ends With Us</h3>
+                <p>Colleen Hoover</p>
+                <p class="rating">★★★★☆</p>
+                <a href="#cart" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="bestseller">
+                <img src="https://m.media-amazon.com/images/I/81y9uCHoxrL._AC_UF1000,1000_QL80_.jpg" alt="The Silent Patient">
+                <h3>The Silent Patient</h3>
+                <p>Alex Michaelides</p>
+                <p class="rating">★★★★★</p>
+                <a href="#cart" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="bestseller">
+                <img src="https://metro.co.uk/wp-content/uploads/2022/09/SEI_126437048-03ee.jpg?quality=90&strip=all&zoom=1&resize=480%2C754" alt="Verity">
+                <h3>Verity</h3>
+                <p>Colleen Hoover</p>
+                <p class="rating">★★★★☆</p>
+                <a href="#cart" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="bestseller">
+                <img src="https://bookspringindia.in/cdn/shop/files/617tqIGzgLL._AC_UF1000_1000_QL80_FMwebp_195x195@2x.webp?v=1688283316" alt="My Fault">
+                <h3>My Fault</h3>
+                <p>Mercedes Ron</p>
+                <p class="rating">★★★★★</p>
+                <a href="#cart" class="add-to-cart">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Special Offers-->
+    <section class="special-offers">
+        <h2>Special Offers</h2>
+        <div class="offers-container">
+            <div class="offer">
+                <h3>Buy 2 Get 1 Free!</h3>
+                <p>Choose from our wide selection of books.</p>
+                <a href="#shop" class="offer-button">Shop Now</a>
+            </div>
+            <div class="offer">
+                <h3>20% Off Best Sellers</h3>
+                <p>Limited time only! Don't miss out on your favorite reads.</p>
+                <a href="#shop" class="offer-button">Shop Now</a>
+            </div>
+            <div class="offer">
+                <h3>Free Shipping on Orders Over ₹999</h3>
+                <p>Stock up on books and save on shipping!!</p>
+                <a href="#shop" class="offer-button">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Newsletter Signup-->
+    <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get the latest book releases and special offers right in your inbox!</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="Submit" class="Subscribe-button">Subscribe</button>
+        </form>
+    </section>
+
+    <!--Testimonials-->
+    <section class="testimonials">
+        <h2>What Our Readers Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"I love the selection of books! The delivery is always fast, and I find new favorites every month."</p>
+                <h3>- Sarah J.</h3>
+            </div>
+            <div class="testimonial">
+                <p>"An amazing bookstore! The staff recommendations have introduced me to some fantastic reads."</p>
+                <h3>- Mark T.</h3>
+            </div>
+            <div class="testimonial">
+                <p>"I appreciate the variety and the special offers. This is my go-to place for all things books!"</p>
+                <h3>- Emily R.</h3>
+            </div>
+        </div>
+    </section>
+
+    <!--Blog Highlights-->
+    <section class="blog-highlights">
+        <h2>Blog Highlights</h2>
+        <div class="blog-container">
+            <div class="blog-post">
+                <img src="best book 2024.png" alt="Blog Post 1">
+                <h3>Top 10 Books of 2024</h3>
+                <p>Discover the must-read books of this year and expand your library.</p>
+                <a href="#read-more" class="read-more">Read More</a>
+            </div>
+            <div class="blog-post">
+                <img src="https://i.pinimg.com/736x/9a/79/55/9a7955bb8ea3358d32dacfd37b971e0c.jpg" alt="Blog Post 2">
+                <h3>The Best Books I have Read</h3>
+                <p>Tips and tricks for selecting the perfect book for your mood.</p>
+                <a href="#read-more" class="read-more">Read More</a>
+            </div>
+            <div class="blog-post">
+                <img src="https://pm1.aminoapps.com/6279/af4e1d2ef04f81f54aea013e301a488a4dce63da_00.jpg" alt="Blog Post 3">
+                <h3>Author Spotlight: Colleen Hoover</h3>
+                <p>Get to know the author behind your favorite books!</p>
+                <a href="#read-more" class="read-more">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Your favorite online bookstore. Discover, read, and enjoy!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@TheBookNook.com</p>
+                <p>Phone: (+91) 9871456385</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Bookstore. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
